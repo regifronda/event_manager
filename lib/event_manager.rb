@@ -38,7 +38,7 @@ def clean_phone_number(phone)
   phone = phone.tr('-+().E ', '')
   
   if (phone.length < 10) || ((phone.length == 11) && (phone[0] != '1')) || phone.length > 11
-    puts "BAD PHONE! NO! NO SANK YOU!"
+    puts "Bad phone number!"
   elsif (phone.length == 11) && (phone[0] == '1')
     phone[0] = ''
     puts phone
